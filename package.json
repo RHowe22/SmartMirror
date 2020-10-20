@@ -1,0 +1,19 @@
+{
+  "name": "smartmirror",
+  "version": "1.0.0",
+  "description": "Learning Node and React through making a smart Mirror",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RHowe22/SmartMirror.git"
+  },
+  "author": "Robert Howe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RHowe22/SmartMirror/issues"
+  },
+  "homepage": "https://github.com/RHowe22/SmartMirror#readme"
+}
