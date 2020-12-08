@@ -12,7 +12,7 @@ class Left extends Component {
 
     render(){
         return (
-            <div style={{float:"left",height:"60vh",width:"50vw" }}>
+            <div style={{float:"left",height:"100%",width:"50%" }}>
                 <div style={{width:"fit-content", margin:"0 auto"}} >
                     <p>Left div </p>
                 </div>

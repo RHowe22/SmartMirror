@@ -12,9 +12,11 @@ class Bottom extends Component {
 
     render(){
         return (
-            <div style={{height:"20vh",width:"100vw", margin:"0 auto" }} >
+            <div style={{height:"20vh",width:"100%", margin:"0 auto" }} >
               <div style={{width:"fit-content", margin:"0 auto"}} >
-                    <p>high Im Bottom </p>
+                    <p>Don't worry about what anybody else is going to do. The best way to<br/>
+                       predict the future is to invent it.<br/>
+                       -- Alan Kay </p>
                 </div>
             </div>
 

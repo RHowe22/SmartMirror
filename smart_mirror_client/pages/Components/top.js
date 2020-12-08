@@ -32,7 +32,7 @@ class Top extends Component {
                <p  style={{fontSize:"12px", textAlign:"center"}}> {this.state.time.toLocaleDateString() } </p>
                         
             </div>
-            </div>
+c            </div>
 
 
 

@@ -12,7 +12,7 @@ class Right extends Component {
 
     render(){
         return (
-            <div style={{float:"right", height:"60vh",width:"50vw" }}>
+            <div style={{float:"right", height:"100%",width:"50%" }}>
                 <div style={{width:"fit-content", margin:"0 auto"}} >
                     <p> High Im Right</p>
                 </div>
