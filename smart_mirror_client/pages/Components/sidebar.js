@@ -3,10 +3,10 @@ import react from "react"
 
 
 /**
- *  represemts generic sideba r list 
+ *  represemts generic sidebar list 
  */
 ListItem(props){
-return(
+return( 
     <div>
     <img src={props.imgsource}/> 
     <div>
@@ -15,20 +15,7 @@ return(
     </div>
 
     </div>
-
-
-
-
-
-
-
-
-)
-
-
-
-
-
+);
 
 
 }
