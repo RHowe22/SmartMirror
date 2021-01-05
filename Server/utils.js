@@ -1,32 +1,25 @@
 var fs = require('fs')
 
-function readquotes(){
-    var retval =[];
-   var quote={
-       author:'',
-       quote:''
-   };
+ function readquotes(){
+   var retval=[];
+   var quote=new Object();
 
-    fs.readFile('quotes.txt','utf8', (data)=>{
-        var lines= data.split("\n");
-        lines.array.forEach(element => {
+   var lines = fs.readFileSync('quotes.txt','utf8').split("\n");
+        lines.forEach(element => 
+            {
             if(!(element==="")){
-                if(element.includes("--")){
+                if(element.startsWith("--")){
                     quote.author= element.substring(2);
                     retval[retval.length]=quote;
-                    quote={
-                        author:'',
-                        quote:''
-                    };
+                    quote=new Object();
+                    quote.quote=""
                 }
                 else{
-                    quote+=element
+                    quote.quote+=element
                 }                  
             } 
-        });
-
     });
-    return retval
+    return retval;
 
 }
 
