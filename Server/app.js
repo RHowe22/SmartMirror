@@ -12,6 +12,16 @@ const app = express()
 const port = 6900
 var sqlite3 = require('sqlite3')
 
+
+
+let allowCrossDomain = function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', "*");
+  res.header('Access-Control-Allow-Headers', "*");
+  next();
+}
+app.use(allowCrossDomain);
+
+
 function initDatabase() {
   var db = new sqlite3.Database('./database.db', sqlite3.OPEN_CREATE | sqlite3.OPEN_READWRITE, (err) => {
     if (err) { console.error(err.message) }
@@ -106,7 +116,7 @@ app.get('/weather', async (req, res) => {
 app.get('/quote', async (req, res) => {
   console.log("quotes")
   let db = new sqlite3.Database('./database.db', sqlite3.OPEN_READWRITE)
-  db.all("select * from quotes Order by RANDOM() ;", [], (err, rows) => {
+  db.all("select * from quotes Order by RANDOM() limit 1 ;", [], (err, rows) => {
     if (err) {
       console.log("error")
       throw err;

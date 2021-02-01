@@ -1,9 +1,9 @@
 import { Component } from "react"
 
-class Right extends Component {
+class Side extends Component {
     constructor(props){
         super()
-        this.state = {  }
+        this.state = { };
    
    
     }
@@ -12,9 +12,9 @@ class Right extends Component {
 
     render(){
         return (
-            <div >
+            <div>
                 <div style={{width:"fit-content", margin:"0 auto"}} >
-                    <p> High Im Right</p>
+                    <p>Left div </p>
                 </div>
             </div>
 
@@ -28,4 +28,4 @@ class Right extends Component {
     }
 }
 
-export default Right
+export default Left

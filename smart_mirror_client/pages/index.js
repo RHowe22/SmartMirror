@@ -16,10 +16,11 @@ export default function Home() {
       </Head>
       <Top>  </Top>
       <div style={{height:"60vh",width:"100%"}}>
-        <Left>  </Left>
-        <Right></Right>
+        <Side  style={{float:"left",height:"100%",width:"50%" }}>  </Side>
+        <Side  style={{float:"right", height:"100%",width:"50%" }}
+        type="weather"  api="http://localhost:6900/weather?type=current,daily,hourly"></Side>
       </div>
-      <Bottom></Bottom>
+      <Bottom type="quote" refreshTime={1440000}  api="http://localhost:6900/quote"></Bottom>
       </div>
   )
 }

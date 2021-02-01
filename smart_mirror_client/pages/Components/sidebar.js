@@ -5,8 +5,8 @@ import react from "react"
 /**
  *  represemts generic sidebar list 
  */
-ListItem(props){
-return( 
+function ListItem(props){
+return(   
     <div>
     <img src={props.imgsource}/> 
     <div>
@@ -19,3 +19,4 @@ return(
 
 
 }
+
